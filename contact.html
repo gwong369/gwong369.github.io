@@ -3,35 +3,34 @@
 <head>
     <meta charset="utf-8" />
     <title>Gary Wong</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 <body>
     <header>
         <h1>Gary Wong</h1>
-        <nav>
+        <div id="nav">
+            <div id="nav-smalllinks">
             <ul>
                 <li><a href="index.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav>
+            </div>
+        </div>
     </header>
     <section>
         <div id="contact-form">
             <h2>Contact</h2>  
             <p>Name</p>
-            <br>
-            <input type="name">
+            <input type="text" name="name" placeholder="Name">
             <p>Email</p>
-            <br>
-            <input type="email">
+            <input type="text" name="email" placeholder="Email">
             <p>Message</p>
-            <br>
-            <input type="message">
-            <br>
+            <input type="text" name="message" placeholder="Your message...">
             <input type="submit" value="Submit">
         </div>
     </section>
-    <footer>Copyright</footer>
+    <footer>Copyright &copy; 2018 Gary Wong</footer>
 </body>
 </html>

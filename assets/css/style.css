@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    height: 100%;
 }
 header{
     background-color: #ffffff;
@@ -9,11 +10,12 @@ header{
     margin: 0 auto;
     clear: both;
 }
+
 section{
     border-top: #cccccc 2px solid;
     background-image: url(../images/topography.png);
     background-repeat: repeat;
-    height: 400px;
+    padding: 30px 0px 30px 0px;
 }
 
 h1{
@@ -47,16 +49,28 @@ nav{
 
 #main-bio{
     width: 960px;
-    height: 350px;
-    margin: 20px auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
     background-color: #ffffff;
     align-content: center;
+    line-height: 150%
 }
 
 #contact-form{
     width: 960px;
-    height: 350px;
-    margin: 20px auto;
+    height: auto;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
+    background-color: #ffffff;
+    align-content: center;
+}
+
+#portfolio{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 0px 20px 0px;
     background-color: #ffffff;
     align-content: center;
 }
@@ -64,30 +78,15 @@ nav{
 img{
     width: 200px;
     height: 200px;
-    margin: 30px 30px 30px 30px;
+    margin: 30px 30px 0px 30px;
     float: left;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: ##ffffff;
-}
-
-li {
-    float: right;
-    border-right: #666666 1px solid;
-    line-height: 10px;
-}
-
-li a {
-    display: block;
-    color: #9c9c9c;
-    text-align: center;
-    padding: 30px 12px 20px 12px;
-    text-decoration: none;
+.img-portfolio{
+    width: 300px;
+    height: auto;
+    margin: 30px;
+    float: left;
 }
 
 p{
@@ -97,23 +96,72 @@ p{
     color: #666666;
 }
 
-input[type=name], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+input[type=text], select {
+    width: 94%;
+    padding: 10px 10px;
+    margin: 10px 30px 10px 30px;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
 }
 
+input[type=submit] {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 10px 30px;
+    padding: 10px 25px 10px 25px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 12pt;
+    border: none;
+    cursor: pointer;
+}
+
 footer{
+    clear: both;
     background-color: #666666;
     margin: 0 auto;
     color: #d4d4d4;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 30px;
-    clear: both;
     border-top: 7px #4aaaa5 solid;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#nav {
+    float:right;
+    height:90px;
+    line-height: 90px;
+    vertical-align: middle;
+    width:270px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+#nav-smalllinks {
+    text-transform:none;
+}
+#nav-smalllinks ul,#nav-smalllinks li {
+    display: inline;
+    list-style: none;
+}
+#nav-smalllinks ul li:after {
+    padding-right: 10px;
+    padding-left: 10px;
+    content: "|";
+}
+#nav-smalllinks a {
+    color: #999;
+    text-decoration: none;
+    letter-spacing: 0.90px;
+}
+#nav-smalllinks ul li:last-child:after {
+    content: " ";
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#nav-smalllinks.small_nav a:hover {
+    text-decoration: underline;
 }
