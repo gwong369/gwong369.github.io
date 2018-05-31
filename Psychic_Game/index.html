@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic Game</title>
+</head>
+
+<body>
+    <h1>The Psychic Game</h1>
+    <p>Guess what letter I'm thinking of.</p>
+    <p>Wins: <span id="win"></span></p>
+    <p>Losses: <span id="lost"></span></p>
+    <p>Guesses left: <span id="guessesLeft"></span></p>
+    <p>Your guesses so far: <span id="guesses"></span></p>
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (every letter of the alphabet).
+    var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var win = 0;
+    var lost = 0;
+    var guessesLeft = 9;
+    var guesses = [];
+    var computerGuess;
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+        var userGuess = event.key;
+
+        if ((userGuess === computerGuess)) {
+            win++; 
+            guessesLeft = 9; 
+            computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            guesses = [];
+
+        } else { 
+            if (!isDuplicate(userGuess, guesses)) {
+                console.log("is not dup: " + !isDuplicate(userGuess, guesses));
+                guessesLeft--;
+                if (guessesLeft === 8) {
+                    guesses.push(userGuess);
+                } else {
+                    guesses.push(userGuess);
+                    guesses.innerHTML = guesses.join(', ');
+                }
+            }
+            
+        }
+
+        if ((guessesLeft === 0)) {
+            lost++; 
+            guessesLeft = 9;
+            computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            guesses = [];
+        }
+
+        document.querySelector("#win").innerHTML = win;
+
+        document.querySelector("#lost").innerHTML = lost;
+
+        document.querySelector("#guessesLeft").innerHTML = guessesLeft;
+
+        document.querySelector("#guesses").innerHTML = guesses;
+    }
+
+    var isDuplicate = function(userGuess, guesses) {
+        for (var i = 0; i < guesses.length; i++){
+            // console.log('user guess: ' + userGuess + ' guesses: ' + guesses);
+            // console.log('user guess: ' + userGuess + ' guess: ' + guesses[i]);
+            // console.log('match? ' + (userGuess === guesses[i]));
+            if (userGuess === guesses[i]) {
+                return true;
+            }
+        }
+    }
+
+  </script>
+
+</body>
+
+</html>
