@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+</head>
+<body>
+    <div class= "container">
+        <header>
+            <div class="jumbotron jumbotron-fluid topbar">
+                <h1 class="display-4">Crystal's Collector!</h1>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-6">
+                <div class= "main">
+                    <p>You will be given a random number at the start of the game.</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                    <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div id="computerGuess">
+                        <p> Computer Guess</p>
+                    </div>
+                    <div id="win-losses">
+                        <p id="wins">Wins: </p>
+                        <p id="losses">Losses: </p>
+                    </div>
+                </div>
+                <div class = "row">
+                    <img src="assets/images/icon-1.png" width="100px" height="100px" id="gemOne" class="gemsOne">
+                    <img src="assets/images/icon-2.png" width="100px" height="100px" id="gemTwo" class="gems">
+                    <img src="assets/images/icon-3.png" width="100px" height="100px" id="gemThree" class="gems">
+                    <img src="assets/images/icon-4.png" width="100px" height="100px" id="gemFour" class="gems">
+                </div>      
+                <div class="row">
+                    <div>
+                        <p id="scorebox">Your points: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
