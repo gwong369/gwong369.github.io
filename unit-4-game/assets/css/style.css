@@ -25,6 +25,7 @@ body {
     color: #fff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
+    width: 45%;
 }
 
 #win-losses{
@@ -33,6 +34,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     margin: 0px 0px 0px 20px;
+    width: 45%;
 }
 
 .gems{
@@ -42,12 +44,12 @@ body {
     border-radius: 2px;
 }
 
-.gemsOne {
+/* .gemsOne {
     padding: 10px;
     margin: 10px 10px 0px 0px;
     border: solid #3d3d3d 2px;
     border-radius: 2px;
-}
+} */
 
 #scorebox {
     background-color: green;
@@ -55,4 +57,8 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 20px;
     width: 100%;
+}
+
+#gemHolder {
+    width: 95%;
 }
