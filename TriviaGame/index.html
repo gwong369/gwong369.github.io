@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Totally Trivial Trivia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" id="header">
+                <h1>Totally Trivial Trivia!</h1>
+            </div>
+        </div>
+        <div class="row" id="timer">
+            <div class="col-lg-12 text-center">
+                <button type="button" id="start">START</button>
+            </div>
+            <div class="col-lg-12 text-center">
+                <p id="time">Time Remaining:<span id="timer"></span></p>
+            </div>
+        </div>
+    
+        <div class="text-center" id="triviaQuestions">
+            <b>1. What year did snowboarding become an Olympic sport?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">1984
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">1998
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">2002
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">2006
+                </label>
+            </form>
+            <br>
+            <b>2. Where was the first snowboard Olympic event held?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Toronto
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Salt Lake City
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">Nangano
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Vancouver
+                </label>
+            </form>
+            <br>
+            <b>3. What does riding "goofy" stance mean?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">You were born goofy
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">You ride with your left foot forward
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">You ride both feet forward
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">You ride with your right foot forward
+                </label>
+            </form>
+            <br>
+            <b>4. Who is the youngest female snowboarder to win gold at the Olympics?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Gretchen Bleiler
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">Chloe Kim
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Hannah Teter
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Jamie Anderson
+                </label>
+            </form>
+            <br>
+            <b>5. Who won gold in the 2018 winter Olympic men's snowboard halfpipe event?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Todd Richards
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">Shaun White
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Ayumu Hirano
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Danny Kass
+                </label>
+            </form>
+            <br>
+            <b>6. What is a 1080?</b>
+            <form class="question">
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">You spin 2 rotations
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">You flip 3 times
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="incorrect">Your spin 2.5 rotations
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" value="correct">You spin 3 full rotations
+                </label>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button type="button" class="done" id="done">DONE</button>
+            </div>
+        </div>
+        <div class="summary"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
